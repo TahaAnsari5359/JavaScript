@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Sign In</title>
+
+    <style>
+        input {
+            margin: 15px;
+        }
+
+        button {
+            width: 180px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            font-size: 15px;
+            border-radius: 18px;
+            border: 5px groove;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border-color: black;
+	    background-color:green;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 350px;
+            height: 30px;
+            font-size: 15px;
+            border: 5px groove;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+
+        input:hover {
+            border-color: #888;
+        }
+    </style>
+</head>
+
+<body>
+<big>
+    <form method="GET" action="data.html">
+        <center>
+            <big>
+                <h1>
+                    <img src="logogoogle.png" alt="Error Loading Image" width="350" height="200">
+                </h1>
+
+                <b>
+                    <label>Email ID: </label>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+
+                    <br>
+
+                    <label>Password: </label>
+                    <input type="password" name="password" placeholder="Enter Password" required>
+                </b>
+
+                <br>
+
+                <input type="checkbox" required> I agree to the
+                <a href="terms.html">Terms</a>
+
+                <br><br><br>
+
+                <button type="submit">LOGIN</button>
+                <br>
+            </big>
+        </center>
+    </form>
+
+    <center>
+        <label>Don't have an account?</label>
+        <a href="register.html">Register</a>
+    </center>
+</big>
+</body>
+
+</html>
